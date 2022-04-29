@@ -1,0 +1,7 @@
+---
+# This playbook is used to clone git repo on host server
+
+- hosts: all
+  become: yes
+  roles:
+   - clone

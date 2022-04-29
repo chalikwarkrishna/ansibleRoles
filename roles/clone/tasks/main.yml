@@ -1,0 +1,9 @@
+- name: install git
+  yum:
+   name: git
+   state: present
+
+- name: git clone
+  git: 
+   repo: "https://{{ token }}@github.com/{{ username }}/{{ repo_name }}.git"
+   dest: /home/ansible/roleplay
